@@ -19,5 +19,5 @@ Perfect for:
 ## 🚀 Install
 
 ```bash
-go install github.com/hasanaburayyan/bytewrite/src/cmd/bytewrite@latest
+go install github.com/hasanaburayyan/bytewrite/src/cmd@latest
 ```

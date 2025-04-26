@@ -1,4 +1,4 @@
-package bytewrite
+package cmd
 
 import (
 	"fmt"

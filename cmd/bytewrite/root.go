@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hasanaburayyan/bytewrite/src/internal/writer"
+	"github.com/hasanaburayyan/bytewrite/internal/writer"
 	"github.com/spf13/cobra"
 )
 

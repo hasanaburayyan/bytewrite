@@ -37,17 +37,11 @@ Type real bits or hex, not text characters.`,
 			inputs = args
 		}
 
-		// Then call your WriteBytes like normal
-		err := writer.WriteBytes(os.Stdout, inputs, hexMode, binaryMode)
-		if err != nil {
-			return err
-		}
-
 		if !binaryMode && !hexMode {
 			return fmt.Errorf("you must specify either -b (binary) or -h (hex) mode")
 		}
 
-		return writer.WriteBytes(os.Stdout, args, hexMode, binaryMode)
+		return writer.WriteBytes(os.Stdout, inputs, hexMode, binaryMode)
 	},
 }
 

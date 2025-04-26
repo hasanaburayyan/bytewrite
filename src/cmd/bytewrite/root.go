@@ -1,4 +1,4 @@
-package bytewrite
+package main
 
 import (
 	"fmt"
@@ -27,7 +27,7 @@ Type real bits or hex, not text characters.`,
 			return fmt.Errorf("you must specify either -b (binary) or -h (hex) mode")
 		}
 
-		return writer.WriteBytes(os.Stdout, args, hexMode, false)
+		return writer.WriteBytes(os.Stdout, args, hexMode, binaryMode)
 	},
 }
 

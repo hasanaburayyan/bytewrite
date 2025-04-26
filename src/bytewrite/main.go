@@ -1,7 +1,7 @@
 package main
 
-import "github.com/hasanaburayyan/bytewrite/src/cmd"
+import bytewrite "github.com/hasanaburayyan/bytewrite/src/cmd"
 
 func main() {
-	cmd.Execute()
+	bytewrite.Execute()
 }

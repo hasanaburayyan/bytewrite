@@ -19,5 +19,27 @@ Perfect for:
 ## 🚀 Install
 
 ```bash
-go install github.com/hasanaburayyan/bytewrite/src/cmd/bytewrite@latest
+go install github.com/hasanaburayyan/bytewrite/cmd/bytewrite@v0.1.0
+```
+
+
+## 📖 Usage
+
+```bash
+# write a single byte
+$ bytewrite -b 00000001 > out.bin
+
+# verify the output
+$ xxd out.bin
+
+00000000: 01                                       .
+```
+
+```bash
+# write a byte array
+$ bytewrite -b 00000001 00000010 00000011 > out.bin
+
+# verify the output
+$ xxd out.bin
+00000000: 01 02 03                                 ...
 ```

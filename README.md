@@ -27,26 +27,23 @@ go install github.com/hasanaburayyan/bytewrite/src/cmd/bytewrite@latest
 
 ```bash
 # write a single byte
-$ bytewrite -b 00000001 > out.bin
+bytewrite -b 00000001 > out.bin
 
 # verify the output
-$ xxd out.bin
-
-00000000: 01                                       .
+xxd out.bin
 ```
 
 ```bash
 # write a byte array
-$ bytewrite -b 00000001 00000010 00000011 > out.bin
+bytewrite -b 00000001 00000010 00000011 > out.bin
 
 # verify the output
-$ xxd out.bin
-00000000: 01 02 03                                 ...
+xxd out.bin
 ```
 
 ## Hello World!
 
 Try this out!
 ```bash
-$ bytewrite -b 01101000 01100101 01101100 01101100 01101111 00100000 00000001 00000001 00000001 00000001 01110111 01101111 01110010 01101100 01100100 00001010
+bytewrite -b 01101000 01100101 01101100 01101100 01101111 00100000 00000001 00000001 00000001 00000001 01110111 01101111 01110010 01101100 01100100 00001010
 ```

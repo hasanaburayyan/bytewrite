@@ -19,7 +19,7 @@ Perfect for:
 ## 🚀 Install
 
 ```bash
-go install github.com/hasanaburayyan/bytewrite/cmd/bytewrite@v0.1.0
+go install github.com/hasanaburayyan/bytewrite/cmd/bytewrite@v0.1.1
 ```
 
 
